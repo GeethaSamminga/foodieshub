@@ -1,0 +1,156 @@
+body{
+    overflow: hidden;
+}
+.total {
+position: relative;
+border: 1px solid black;
+height: 900px;
+width: 100%;
+overflow: hidden;
+}
+
+.total::before {
+content: "";
+position: absolute;
+height: 100%;
+width: 100%;
+background-image: url("https://img.freepik.com/premium-photo/photo-is-must-everyday-work-ai-generated-best-wonderful-photo_1088224-14619.jpg?size=626&ext=jpg&ga=GA1.1.269063735.1706727424&semt=ais_userhttps://t4.ftcdn.net/jpg/03/01/90/79/240_F_301907970_ZVaPcSGe9rgYgRMRGUcbf91YxNwB7d2W.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+filter: blur(3px);
+z-index: -1; 
+}
+    .total h1 {
+        font-size: 45px;
+        background-size: cover;
+        background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPDxUPEhIVFRUVFRUVFRUXFyEYFRUVFRUXFhUVGBUYHSggGBolHRcaITEhJSkrLi4uFx8zODMtNyotLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIATMApAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQcC/8QAIRABAQEBAAICAwEBAQAAAAAA8ABRsQERMdFBkcECgRL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A2sZBkGwbAknuANg2DJ7HxAGz0PmDIMgSSAMgyDYNgDIMg2DYEnuQBsGwZPA/EAbBsGQZArJBB2QckFlJBaDkg7BRykHawJSQIOyDkAdkHJBaT1IEHJB2AOSDsgVpWCDYNgyex8QJJAGQZBs9j5gDIMnsfM9j5gSSANg2ex8QZAGwbBkGQJPcgDIMnuDYAyDINnsfMCtPdYIOSDdkFpJAg7IMgDtaDMnqCx+aSBUcpPQ+dgo5KDZBaSeoLB2kGQUdoOwZIFZ48SCDIMg2QJJAGwbIMgDYNgzZAkkAZBkg2AMgyDckCSQBsGyDNgDYNgzZAlfcgDsoMgyBWkgtByQbAHK0GwbArSQKjtBkGQB2QZBkFpJAg5INgo5Qcg2DYD81pWCDYNg7PcCSQBkGVoOQBkGVHKQJWkAbBtaDsAbBtR2kCVpAGTwPxKjkEGQZByDkCtKwQckGwbArSQKjtBkGQB2tBkGQJJAg5BsGwByQbBsCSQWg7BkGQUdpBkGQK0kAZBkHIOQJWkAbBtYOwQbBsHYOwJJAGQZWg5AGQZByDkCVpAGwbWg7AGwbB2DsCskEHZBkGQJJAg5BsGwPQ/U9QbBsCSQIOwZBkAbsgyDIEkgQcg2DYAzJBsGwWUkAbBtR2QSVkEGQZWDkEGQZUckElaQBsG1g7BBsG1HYOwSVkEgysHIIMlRyDkErJBBkg2DYHqSQPUGwZBkD0PmQZBkCSQJ6HxBsGwBkg2DYEkgQbBkGQPQ+Z6gyDIFaSAM2VHKQJJAg3JB2AOSDsge5KwSDNrByCDNkHKjkEkrBINysHYINye4OwdgPmskEGz0PmDIMgSSAMgyDYNgDIMg2DYEkgDYNgyDIA2DYMgyBJIAyDINg2AMnofEGwbArSQBysHaQJJAg7IOQB2QckCSQIOVoOwByQdkCSQIOyDkAdkHJBZJBBkGQbBsCSQBsGwZBkAbBsGQZAkkAZBkGzyPzAGQZBsGwJJAGwbBkGQBsGwZBkCSQB2QZkgspIFRykG7AHK0G7ILSSCwdpBmQUdg7BmUgslPUCDkqN2AOUg3Z6gspWCDY/B5gyDID8Se5AGQZINgDIMg2QJJ7gDYNk9j4gPweY/B5gyQH4k9yAMgye4NgDI/B4nsfMGwK0rAHJT0PmQWU9SC0HZBkFHaDsGQZBaT1ILQck9D5go5Byg2eoEkgVHaQZBR2g7Bk9D4gPzWSDj/Xn5b9eJ58v39eJIHue5IHt+vuePL9ffmSB4/1/P59+Z48v19yQPc/9SQPPl+/qef9fP8A3+/XiSB7/v8AfrxPPl+/rxJA9z3JA8eX6+548/z+ffmSB7+GffmePL9ffmSB481kg//Z");
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent; 
+    }
+    #searchInput {
+        flex: 1; 
+        padding: 0.75rem 1rem; 
+        font-size: 1.1rem;
+        border: 2px solid black;
+        outline: 0;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        margin-top: 0px;
+    }
+    button {
+        width: 55px;
+        height: 50px;
+        font-size: 1.3rem;
+        border: 2px solid black;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+    .box {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .food{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        max-width: 100%;
+    }
+    .card{
+height: auto; 
+width: 500px; 
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 15px 2px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+transition: transform 0.3s ease;
+}
+.card h2,
+.card p,
+.card button {
+ margin: 0 auto; 
+  }
+.card img{
+max-height: 225px; 
+width: auto; 
+border-radius: 5px;
+display: block;
+margin: 0 auto;
+    }
+.card button {
+        border-radius: 5px;
+        width:130px;
+        height:30px;
+        background-color:lightgrey;
+        margin-left: 150px;
+        font-size: small;
+ }
+
+ @media (max-width: 768px) {
+    /* Adjust the total container */
+    .total {
+        height: 800px; /* Allow height to adjust based on content */
+        padding: 0 10px; /* Add padding for better spacing on smaller screens */
+    }
+
+    /* Adjust the background image for .total */
+    .total::before {
+        filter: blur(2px); /* Less blur on smaller screens */
+    }
+
+    /* Adjust heading inside .total */
+    .total h1 {
+        font-size: 30px; /* Smaller font size */
+    }
+
+    /* Adjust #searchInput */
+    #searchInput {
+        width: 150px; /* Adjust width to fit smaller screens */
+        padding: 0.5rem 0.75rem; /* Smaller padding */
+        font-size: 1rem; /* Smaller font size */
+    }
+
+    /* Adjust button */
+    button {
+        width: 50px; /* Smaller width */
+        height: 45px; /* Smaller height */
+        font-size: 1rem; /* Smaller font size */
+        border-top-right-radius: 1.5rem; /* Smaller border radius */
+        border-bottom-right-radius: 1.5rem; /* Smaller border radius */
+    }
+
+    /* Adjust .box */
+    .box {
+        margin-top: 10px; /* Less margin on top */
+    }
+
+    /* Adjust .food */
+    .food {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Less gap between items */
+        padding: 10px; /* Less padding */
+    }
+
+    /* Adjust .card */
+    .card {
+        width: 90%; /* Make card width responsive */
+        max-width: 100%; /* Ensure card does not exceed screen width */
+        box-shadow: 10px 2px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow for smaller screens */
+    }
+
+    /* Adjust .card img */
+    .card img {
+        max-height: 180px; /* Smaller max-height */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust .card button */
+    .card button {
+        width: 100px; /* Smaller width */
+        height: 25px; /* Smaller height */
+        margin-left: 0; /* Remove left margin */
+        font-size: smaller; /* Smaller font size */
+    }
+}

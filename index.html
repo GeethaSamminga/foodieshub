@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="navbar container">
+        <a href="#" class="logo">F<span>oo</span>diesHub
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#" id="settingsLink">Settings</a>
+                </div>
+        </div>
+
+        <div class="left">
+
+<h1>What Are We About</h1>
+<p>FoodiesHub is a place where you can please your soul and tummy with delicious food recepies of all Cuisine. And our service is absolutely free. So start exploring now.</p>
+
+<button id="exploreButton">EXPLORE NOW</button>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="https://www.licious.in/blog/wp-content/uploads/2022/03/shutterstock_1891229335-min.jpg">
+                </div>
+                <div>
+                    <img src="https://img.freepik.com/premium-photo/white-wedding-cake-with-berries-ai-generated-illustration-photorealistic-food-background-sweets_520826-6508.jpg?w=740">
+                </div>
+                <div>
+                    <img src="https://img.freepik.com/premium-photo/fresh-homemade-italian-pizza-margherita-with-buffalo-mozzarella-basil_914391-419.jpg">
+                </div>
+                <div>
+                    <img src="https://t4.ftcdn.net/jpg/06/46/09/17/360_F_646091793_ZGkTH6nwTLeGA9jPp20vnFpnKLrZwCYy.jpg">
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/1109197/pexels-photo-1109197.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div>
+                    <img src="https://t4.ftcdn.net/jpg/05/61/78/69/360_F_561786951_IdQbtR0bga3RzISgodGvIRMFEBqmjfcn.jpg">
+                </div>
+                <div>
+                    <img src="https://www.sharmispassions.com/wp-content/uploads/2013/02/EggMasala4.jpg">
+                </div>
+                <div>
+                    <img src="https://images.pexels.com/photos/2819088/pexels-photo-2819088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/040/708/398/small_2x/ai-generated-royal-feast-master-the-art-of-chicken-biryani-at-home-generative-ai-photo.jpg">
+                </div>
+            </div>
+            <script>
+               document.getElementById("exploreButton").addEventListener("click", function() {
+                window.location.assign("./search.html");
+                })
+
+                document.getElementById("settingsLink").addEventListener("click", function() {
+            document.body.classList.toggle("dark-theme");
+            document.body.classList.toggle("light-theme");
+        });
+                </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+:root {
+    --background-color: #fff;
+    --background-light: #fff;
+    --shadow-color: rgba(0,0,0,0.2);
+    --primary-color:rgb(225,0,86);
+    --text-color:#0A0A0A;
+    --text-light:#575757;
+    --font-size:16px;
+    --animation-speed:1;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: var(--font-size);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+/* Light theme styles */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-theme .navbar {
+    background-color: #f8f9fa;
+}
+
+body.light-theme .nav-links a {
+    color: #000000;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color:gray;
+    color: #ffffff;
+}
+
+body.dark-theme .navbar {
+    background-color:gray;
+}
+
+body.dark-theme .nav-links a {
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    height:55px;
+   box-shadow: 0 3px 6px var(--shadow-color);
+   background-color:var(--background-color) ;
+   color:var(--text-color);
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+.logo{
+  font-size: 1.5em;
+  font-weight:bolder; 
+  color:var(--primary-color) ;
+  text-shadow: 0 1px 3px var(--shadow-color);
+  span{
+    color:var(--text-color)
+  }
+}
+.nav-links{
+    a{
+        margin-left:1em ;
+        color:var(--text-light);
+        letter-spacing: 2px;
+        text-transform:uppercase;
+        position:relative;
+        &::before{
+            content: '';
+            display:inline-block;
+            height:3px;
+            width:100%;
+            background-color: var(--primary-color);
+            position:absolute;
+            bottom:-5px;
+            left:0;
+            transform:scaleX(0);
+            transition:transform 0.5s calc(var(--animation-speed)*0.2s)ease-in-out;
+        }
+        &:hover{
+            &::before{
+                transform:scaleX(1);
+            }
+        }
+        &.active{
+          color:var(--primary-color); 
+          font-weight: bold;
+        }
+    }
+}
+
+}
+.container{
+    padding-inline:15vw;
+}
+.left{
+    float:left;
+    height:450px;
+    width:450px;
+    margin-left: 150px;
+    margin-top: 100px;
+    h2{
+        line-height: 55px;
+        margin-top: 0px;
+        font-size: 30px;
+    }
+    p{
+        line-height:45px;
+        font-size: 20px;
+    }
+    button{
+       background-color:var(--primary-color) ; 
+       border-radius: 5px;
+       margin-top:80px;
+       height:50px;
+       width:180px;
+       font-size: medium;
+    }
+}
+.right{
+    display:grid;
+    float:right;
+    margin-right: 250px;
+    margin-top: 150px;
+    grid-template-columns:auto auto auto ;
+    grid-template-rows: auto auto auto ;
+    gap:3px;
+    img{
+        height:100px;
+        width:100px
+    }
+}
+
+/* Media queries for max-width: 768px */
+@media (max-width: 768px) {
+    
+    .left {
+        float: none; 
+        width: 90%; 
+        margin: 20px auto; 
+        padding: 0 10px; 
+        height: auto; 
+        text-align: center; 
+    }
+
+    .left h1 {
+        font-size: 24px;
+    }
+
+    .left p {
+        font-size: 16px;
+        line-height: 28px; 
+    }
+
+    .left button {
+        width: 150px;
+        height: 40px;
+        font-size: small; 
+        margin-top: 40px;
+    }
+
+    .right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); 
+        gap: 2px; 
+        width: 90%; 
+        max-width: 700px; 
+        height: auto; 
+        margin: 20px auto; 
+    }
+    
+    .right img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+    
+   
+    .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    } 
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+}
+
+   
+
